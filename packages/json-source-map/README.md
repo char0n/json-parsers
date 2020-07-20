@@ -35,6 +35,11 @@ const jsonString = '{"test": test}';
 const ast = parse(jsonString, null, 2); // throws SyntaxError
 ```
 
+### Additional features
+
+ - supports BigInt
+ - supports Maps and Sets
+
 ### References
 
  - https://github.com/epoberezkin/json-source-map
