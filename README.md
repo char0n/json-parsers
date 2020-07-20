@@ -11,7 +11,9 @@ will lead you to specific research whitepaper of that particular parser.
 
 ### Overall conclusion
 
-
 jsonc-parser interesting.
 
 
+### Additional resources
+
+ - [Implementing custom JSON parser from scratch](https://lihautan.com/json-parser-with-javascript/)
