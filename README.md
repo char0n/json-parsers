@@ -23,3 +23,4 @@ will lead you to specific research whitepaper of that particular parser.
  - [Parsing absolutely anything in JavaScript using Earley algorithm](https://medium.com/@gajus/parsing-absolutely-anything-in-javascript-using-earley-algorithm-886edcc31e5e)
  - [Error Detection and Recovery in LR Parsers](http://what-when-how.com/compiler-writing/bottom-up-parsing-compiler-writing-part-13/)
  - [Error Recovery for LR Parsers](http://www.dtic.mil/dtic/tr/fulltext/u2/a043470.pdf)
+ - [JavaScript Parsing Libraries Benchmark](https://sap.github.io/chevrotain/performance/)
