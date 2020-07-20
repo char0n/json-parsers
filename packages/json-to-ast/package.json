@@ -1,0 +1,24 @@
+{
+  "name": "json-to-ast",
+  "version": "1.0.0",
+  "description": "Research for json-to-ast library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vtrushin/json-to-ast.git"
+  },
+  "author": "https://github.com/vtrushin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vtrushin/json-to-ast/issues"
+  },
+  "homepage": "https://github.com/vtrushin/json-to-ast#readme",
+  "dependencies": {
+    "install": "^0.13.0",
+    "json-to-ast": "^2.1.0",
+    "npm": "^6.14.6"
+  }
+}

@@ -7,6 +7,7 @@ will lead you to specific research whitepaper of that particular parser.
 - [json-ast](./packages/json-ast)
 - [json-source-map](./packages/json-source-map)
 - [jsonc-parser](./packages/jsonc-parser)
+- [json-to-ast](./packages/json-to-ast)
 
 ### Overall conclusion
 
