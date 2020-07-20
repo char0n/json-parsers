@@ -1,0 +1,22 @@
+{
+  "name": "jsonc-parser",
+  "version": "1.0.0",
+  "description": "Research for jsonc-parser library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/microsoft/node-jsonc-parser.git"
+  },
+  "author": "https://github.com/microsoft",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/microsoft/node-jsonc-parser/issues"
+  },
+  "homepage": "https://github.com/microsoft/node-jsonc-parser#readme",
+  "dependencies": {
+    "jsonc-parser": "^2.3.0"
+  }
+}
