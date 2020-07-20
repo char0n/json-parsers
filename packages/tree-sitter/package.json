@@ -1,0 +1,23 @@
+{
+  "name": "tree-sitter",
+  "version": "1.0.0",
+  "description": "Research for tree-sitter library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tree-sitter/tree-sitter.git"
+  },
+  "author": "https://github.com/tree-sitter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tree-sitter/tree-sitter/issues"
+  },
+  "homepage": "https://github.com/tree-sitter/tree-sitter#readme",
+  "dependencies": {
+    "tree-sitter": "^0.16.1",
+    "tree-sitter-json": "^0.16.0"
+  }
+}

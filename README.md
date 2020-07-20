@@ -9,11 +9,11 @@ will lead you to specific research whitepaper of that particular parser.
 - [jsonc-parser](./packages/jsonc-parser)
 - [json-to-ast](./packages/json-to-ast)
 - [json-asty](./packages/json-asty)
+- [tree-sitter](./packages/tree-sitter)
 
 ### Overall conclusion
 
-jsonc-parser interesting.
-
+@todo: jsonc-parser, tree-sitter.
 
 ### Additional resources
 
@@ -21,3 +21,5 @@ jsonc-parser interesting.
  - [Backus-Naur Form](https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form)
  - [McKeeman Form](https://www.crockford.com/mckeeman.html)
  - [Parsing absolutely anything in JavaScript using Earley algorithm](https://medium.com/@gajus/parsing-absolutely-anything-in-javascript-using-earley-algorithm-886edcc31e5e)
+ - [Error Detection and Recovery in LR Parsers](http://what-when-how.com/compiler-writing/bottom-up-parsing-compiler-writing-part-13/)
+ - [Error Recovery for LR Parsers](http://www.dtic.mil/dtic/tr/fulltext/u2/a043470.pdf)
