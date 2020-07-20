@@ -1,5 +1,7 @@
 # json-source-map
 
+Parse/stringify JSON and provide source-map for JSON-pointers to all nodes.
+
 ### Source map support
 
 Supports source map via location objec.
@@ -39,6 +41,7 @@ const ast = parse(jsonString, null, 2); // throws SyntaxError
 
  - supports BigInt
  - supports Maps and Sets
+ - supports types arrays
 
 ### References
 
