@@ -8,6 +8,7 @@ will lead you to specific research whitepaper of that particular parser.
 - [json-source-map](./packages/json-source-map)
 - [jsonc-parser](./packages/jsonc-parser)
 - [json-to-ast](./packages/json-to-ast)
+- [json-asty](./packages/json-asty)
 
 ### Overall conclusion
 
@@ -17,3 +18,6 @@ jsonc-parser interesting.
 ### Additional resources
 
  - [Implementing custom JSON parser from scratch](https://lihautan.com/json-parser-with-javascript/)
+ - [Backus-Naur Form](https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form)
+ - [McKeeman Form](https://www.crockford.com/mckeeman.html)
+ - [Parsing absolutely anything in JavaScript using Earley algorithm](https://medium.com/@gajus/parsing-absolutely-anything-in-javascript-using-earley-algorithm-886edcc31e5e)

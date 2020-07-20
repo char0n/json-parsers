@@ -1,0 +1,22 @@
+{
+  "name": "json-asty",
+  "version": "1.0.0",
+  "description": "Research for json-asty library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rse/json-asty.git"
+  },
+  "author": "https://github.com/rse",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rse/json-asty/issues"
+  },
+  "homepage": "https://github.com/rse/json-asty#readme",
+  "dependencies": {
+    "json-asty": "^1.0.2"
+  }
+}
