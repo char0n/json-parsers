@@ -1,0 +1,22 @@
+{
+  "name": "json-ast",
+  "version": "1.0.0",
+  "description": "Research for json-ast library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neuroo/json-ast.git"
+  },
+  "author": "https://github.com/neuroo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neuroo/json-ast/issues"
+  },
+  "homepage": "https://github.com/neuroo/json-ast#readme",
+  "dependencies": {
+    "json-ast": "^2.1.7"
+  }
+}
