@@ -9,4 +9,5 @@ parser.setLanguage(JSONGrammar);
 const jsonString = '{"prop": "val"}';
 const tree = parser.parse(jsonString);
 
-console.log(tree.rootNode.startPosition)
+console.log(tree.rootNode.startPosition);
+console.log(tree.rootNode.endPosition);

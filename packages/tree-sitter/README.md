@@ -8,6 +8,22 @@ Full source map support consisting of `Location` object having `row` and `column
 Location object is assigned on `startPosition` and `endPopition` attributes of every AST node.
 Along with that `startIndex` and `endIndex` are also available.
 
+```js
+'use strict';
+
+const Parser = require('tree-sitter');
+const JSONGrammar = require('tree-sitter-json');
+
+const parser = new Parser();
+parser.setLanguage(JSONGrammar);
+
+const jsonString = '{"prop": "val"}';
+const tree = parser.parse(jsonString);
+
+console.log(tree.rootNode.startPosition);
+console.log(tree.rootNode.endPosition);
+```
+
 ### Error recovery
 
 tree-sitter is robust enough to provide useful results even in the presence of syntax errors.
