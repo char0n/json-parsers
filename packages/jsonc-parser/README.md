@@ -37,6 +37,8 @@ console.dir(parseTree(jsonString).children[0]);
 
  - contains API for computing and applying edits to a JSON string
  - contains other APIs like visitor, scanner, location, etc...
+ - supports JavaScript line comments
+ - supports JavaScript block comments
 
 ### References
 
