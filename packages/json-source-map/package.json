@@ -1,0 +1,22 @@
+{
+  "name": "json-source-map",
+  "version": "1.0.0",
+  "description": "Research for json-source-map library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/epoberezkin/json-source-map.git"
+  },
+  "author": "https://github.com/epoberezkin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/epoberezkin/json-source-map/issues"
+  },
+  "homepage": "https://github.com/epoberezkin/json-source-map#readme",
+  "dependencies": {
+    "json-source-map": "^0.6.1"
+  }
+}
