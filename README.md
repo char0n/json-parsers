@@ -23,6 +23,7 @@ lacked basic features I'd expect from the proper parser:
  - [Hand-build parser](https://github.com/sap/chevrotain/blob/gh-pages/performance/jsonParsers/handbuilt/handbuilt.js)
  - [PEG.js](https://github.com/pegjs/pegjs) - no advanced JSON grammar available (no location, no error recovery)
  - [jison](https://github.com/zaach/jison) - seems dead (no commits for 3 years), error recovery in alpha mode
+ - [nyma](https://www.npmjs.com/package/myna-parser) - usage in community is minimal, documentation consist of 1 A4 document
 
 ### Overall conclusion
 
