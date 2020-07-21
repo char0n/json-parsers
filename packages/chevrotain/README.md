@@ -1,4 +1,4 @@
-# chevrotain
+# Chevrotain
 
 Chevrotain is a blazing fast and feature rich Parser Building Toolkit for JavaScript. It can be used to build parsers/compilers/interpreters for various use cases ranging from simple configuration files, to full fledged programing languages.
 
