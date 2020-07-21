@@ -57,7 +57,7 @@ written about it. Error recovery strategies can be altered.
 error recovery mechanism out there. The library is super fast as is written in C and can be used
 via node.js bindings or [WASM](https://webassembly.org/). The biggest thing about this library
 is that [Github uses it to highlight all it's code](https://github.blog/2018-10-31-atoms-new-parsing-system/) and
-[Atom editor](https://atom.io/). Error recovery mechanism cannot be turned off by a configuration.
+[Atom editor](https://atom.io/) uses it as well. Error recovery mechanism cannot be turned off by a configuration.
 
 ### Additional resources
 
