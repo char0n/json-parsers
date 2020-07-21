@@ -65,6 +65,7 @@ console.log(tree.rootNode.toString())
 ### References
 
  - https://tree-sitter.github.io/tree-sitter/
+ - https://github.blog/2018-10-31-atoms-new-parsing-system/
  - https://youtu.be/Jes3bD6P0To?t=124
  - https://github.com/tree-sitter/tree-sitter
  - https://www.npmjs.com/package/tree-sitter
