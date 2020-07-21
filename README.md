@@ -1,4 +1,4 @@
-# json-parsers
+# JavaScript JSON parsers
 Monorepo containing research for various JSON parsers for JavaSript.
 
 ### Requirements
