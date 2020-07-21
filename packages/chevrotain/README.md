@@ -53,6 +53,7 @@ console.dir(parseResult);
 ### Additional notes
 
  - Error AST nodes are part of AST tree but are rather accumulated on `lexErrors` or `parseErrors` arrays
+ - fastest parser generator out there; run this online benchmark to see [Chevrotain performance](https://sap.github.io/chevrotain/performance/)
 
 ### References
 
