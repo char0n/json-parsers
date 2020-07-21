@@ -1,0 +1,22 @@
+{
+  "name": "antlr4",
+  "version": "1.0.0",
+  "description": "Research for antlr4 library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antlr/antlr4.git"
+  },
+  "author": "https://github.com/antlr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antlr/antlr4/issues"
+  },
+  "homepage": "https://github.com/antlr/antlr4#readme",
+  "dependencies": {
+    "antlr4": "^4.8.0"
+  }
+}

@@ -11,6 +11,7 @@ will lead you to specific research whitepaper of that particular parser.
 - [json-asty](./packages/json-asty)
 - [tree-sitter](./packages/tree-sitter)
 - [Chevrotain](./packages/chevrotain)
+- [Antlr4](./packages/antlr4)
 
 ### Overall conclusion
 
