@@ -12,6 +12,7 @@ will lead you to specific research whitepaper of that particular parser.
 - [tree-sitter](./packages/tree-sitter)
 - [Chevrotain](./packages/chevrotain)
 - [Antlr4](./packages/antlr4)
+- [nearley](./packages/nearley)
 
 ### Other JSON parser
 

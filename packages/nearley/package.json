@@ -1,0 +1,23 @@
+{
+  "name": "nearley",
+  "version": "1.0.0",
+  "description": "Research for nearley library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kach/nearley.git"
+  },
+  "author": "https://github.com/kach",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kach/nearley/issues"
+  },
+  "homepage": "https://github.com/kach/nearley#readme",
+  "dependencies": {
+    "moo": "^0.5.1",
+    "nearley": "^2.19.5"
+  }
+}
