@@ -28,6 +28,8 @@ lacked basic features I'd expect from the proper parser:
 
 ### Overall conclusion
 
+
+
 @todo: jsonc-parser, tree-sitter, Chevrotain, Antlr4
 
 ### Additional resources

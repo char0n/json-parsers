@@ -4,6 +4,8 @@ const { parseTree } = require('jsonc-parser');
 
 const jsonString = '{"prop": "val" sdfasdfas }}';
 
-console.dir(parseTree(jsonString).children[0]);
+const errors = [];
+console.dir(parseTree(jsonString, errors));
+console.dir(errors);
 
 

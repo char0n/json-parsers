@@ -39,6 +39,7 @@ console.dir(parseTree(jsonString).children[0]);
  - contains other APIs like visitor, scanner, location, etc...
  - supports JavaScript line comments
  - supports JavaScript block comments
+ - supports trailing commas
 
 ### References
 
