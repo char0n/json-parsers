@@ -1,7 +1,11 @@
 # json-parsers
-Monorepo containing research for various json-parsers
+Monorepo containing research for various JSON parsers for JavaSript.
 
-This is the list of researched json parsers. Clicking on specific json parser
+### Requirements
+
+I consider quality JSON parser to support **source maps** and implements **error recovery** mechanism.
+
+This is the list of researched JSON parsers. Clicking on specific json parser
 will lead you to specific research whitepaper of that particular parser.
 
 - [json-ast](./packages/json-ast)
@@ -17,7 +21,7 @@ will lead you to specific research whitepaper of that particular parser.
 ### Other JSON parser
 
 This list contains parsers that seemed worth analyzing but after initial analysis
-lacked basic features I'd expect from the proper parser:
+lacked features I'd expect from the proper parser:
 
  - [parsimmon](https://github.com/jneen/parsimmon) - very primitive, no location, nor error recovery mechanism
  - [Hand-build parser](https://github.com/sap/chevrotain/blob/gh-pages/performance/jsonParsers/handbuilt/handbuilt.js)
@@ -26,11 +30,34 @@ lacked basic features I'd expect from the proper parser:
  - [nyma](https://www.npmjs.com/package/myna-parser) - usage in community is minimal, documentation consist of 1 A4 document
  - [ohm.js](https://github.com/harc/ohm) - sparse documentation, no release in 2 years, no mention about error recovery mechanism
 
-### Overall conclusion
+### Summary
 
+This section describes candidates of JSON parsers that got into final selection.
+The order that the libraries are mentioned in doesn't express any preference.
 
+One of the most interesting parsers (not a parser generator) that I've researched here is [jsonc-parser](./packages/jsonc-parser) developed by [Microsoft](https://www.microsoft.com/).
+It's really a piece of art, with no dependencies, advanced error recovery mechanism and source maps support.
+It also goes beyond the JSON spec and optionally supports JS comments and trailing commas. Contains
+API for incremental parsing and edits.
 
-@todo: jsonc-parser, tree-sitter, Chevrotain, Antlr4
+The rest of the parsers that got into this selection falls into categories of true [parser generators](https://en.wikipedia.org/wiki/Compiler-compiler).
+[tree-sitter](./packages/tree-sitter), [Chevrotain](./packages/chevrotain) and [Antlr4](./packages/antlr4) are
+on the same level feature-vise.
+
+*Chevrotain* seems like most configurable one, allowing switching the
+fault tolerance/error recovery mechanism on and off, along with optional parsing of comments and switching
+between [CST and AST trees](https://sap.github.io/chevrotain/docs/guide/concrete_syntax_tree.html#ast-vs-cst).
+It's also the fastest (JavaScript) parser generator out there.
+
+*Antlr4* is a very mature library with JavaScript runtime, considered a second fastest out there.
+It's masterfully documented and there is an actual [book](https://www.oreilly.com/library/view/the-definitive-antlr/9781941222621/)
+written about it. Error recovery strategies can be altered.
+
+*tree-sitter* supports incremental parsing, AST updates and has one of the most sophisticated
+error recovery mechanism out there. The library is super fast as is written in C and can be used
+via node.js bindings or [WASM](https://webassembly.org/). The biggest thing about this library
+is that [Github uses it to highlight all it's code](https://github.blog/2018-10-31-atoms-new-parsing-system/) and
+[Atom editor](https://atom.io/). Error recovery mechanism cannot be turned off by a configuration.
 
 ### Additional resources
 
@@ -41,3 +68,4 @@ lacked basic features I'd expect from the proper parser:
  - [Error Detection and Recovery in LR Parsers](http://what-when-how.com/compiler-writing/bottom-up-parsing-compiler-writing-part-13/)
  - [Error Recovery for LR Parsers](http://www.dtic.mil/dtic/tr/fulltext/u2/a043470.pdf)
  - [JavaScript Parsing Libraries Benchmark](https://sap.github.io/chevrotain/performance/)
+ - [Comparison of parser generators](https://en.wikipedia.org/wiki/Comparison_of_parser_generators)
