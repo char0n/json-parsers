@@ -24,6 +24,7 @@ lacked basic features I'd expect from the proper parser:
  - [PEG.js](https://github.com/pegjs/pegjs) - no advanced JSON grammar available (no location, no error recovery)
  - [jison](https://github.com/zaach/jison) - seems dead (no commits for 3 years), error recovery in alpha mode
  - [nyma](https://www.npmjs.com/package/myna-parser) - usage in community is minimal, documentation consist of 1 A4 document
+ - [ohm.js](https://github.com/harc/ohm) - sparse documentation, no release in 2 years, no mention about error recovery mechanism
 
 ### Overall conclusion
 
