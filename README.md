@@ -22,6 +22,7 @@ lacked basic features I'd expect from the proper parser:
  - [parsimmon](https://github.com/jneen/parsimmon) - very primitive, no location, nor error recovery mechanism
  - [Hand-build parser](https://github.com/sap/chevrotain/blob/gh-pages/performance/jsonParsers/handbuilt/handbuilt.js)
  - [PEG.js](https://github.com/pegjs/pegjs) - no advanced JSON grammar available (no location, no error recovery)
+ - [jison](https://github.com/zaach/jison) - seems dead (no commits for 3 years), error recovery in alpha mode
 
 ### Overall conclusion
 
