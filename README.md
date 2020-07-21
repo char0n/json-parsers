@@ -13,6 +13,15 @@ will lead you to specific research whitepaper of that particular parser.
 - [Chevrotain](./packages/chevrotain)
 - [Antlr4](./packages/antlr4)
 
+### Other JSON parser
+
+This list contains parsers that seemed worth analyzing but after initial analysis
+lacked basic features I'd expect from the proper parser:
+
+ - [parsimmon](https://github.com/jneen/parsimmon) - very primitive, no location, nor error recovery mechanism
+ - [Hand-build parser](https://github.com/sap/chevrotain/blob/gh-pages/performance/jsonParsers/handbuilt/handbuilt.js)
+ - [PEG.js](https://github.com/pegjs/pegjs) - no advanced JSON grammar available (no location, no error recovery)
+
 ### Overall conclusion
 
 @todo: jsonc-parser, tree-sitter, Chevrotain, Antlr4
