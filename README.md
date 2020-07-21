@@ -10,6 +10,7 @@ will lead you to specific research whitepaper of that particular parser.
 - [json-to-ast](./packages/json-to-ast)
 - [json-asty](./packages/json-asty)
 - [tree-sitter](./packages/tree-sitter)
+- [Chevrotain](./packages/chevrotain)
 
 ### Overall conclusion
 

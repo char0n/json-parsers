@@ -1,0 +1,22 @@
+{
+  "name": "chevrotain",
+  "version": "1.0.0",
+  "description": "Research for chevrotain parser library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SAP/chevrotain.git"
+  },
+  "author": "https://github.com/SAP",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SAP/chevrotain/issues"
+  },
+  "homepage": "https://github.com/SAP/chevrotain#readme",
+  "dependencies": {
+    "chevrotain": "^7.0.1"
+  }
+}
