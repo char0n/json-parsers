@@ -15,7 +15,7 @@ will lead you to specific research whitepaper of that particular parser.
 
 ### Overall conclusion
 
-@todo: jsonc-parser, tree-sitter, Chevrotain
+@todo: jsonc-parser, tree-sitter, Chevrotain, Antlr4
 
 ### Additional resources
 
