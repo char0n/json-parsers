@@ -71,6 +71,7 @@ lets you jump to specific functions when viewing a file.
 
 #### Large JavaScript codebases using tree-sitter
 
+ - https://github.com/atom/atom
  - https://github.com/elm-tooling/elm-language-server
  - https://github.com/bash-lsp/bash-language-server
  - https://github.com/rubyide/vscode-ruby/tree/master/packages/language-server-ruby
