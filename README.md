@@ -69,3 +69,4 @@ is that [Github uses it to highlight all it's code](https://github.blog/2018-10-
  - [Error Recovery for LR Parsers](http://www.dtic.mil/dtic/tr/fulltext/u2/a043470.pdf)
  - [JavaScript Parsing Libraries Benchmark](https://sap.github.io/chevrotain/performance/)
  - [Comparison of parser generators](https://en.wikipedia.org/wiki/Comparison_of_parser_generators)
+ - [Efficient and Flexible Incremental Parsing](https://www.researchgate.net/publication/2377179_Efficient_and_Flexible_Incremental_Parsing)

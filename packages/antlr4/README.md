@@ -35,11 +35,25 @@ const jsonString = '{"prop" "val';
 console.dir(parse(jsonString, { buildParseTrees: true }).children[0].children[1]);
 ```
 
+### Additional features
+
+ - can build parse trees and generate listeners and visitors
+ - automatically constructs parse trees for you
+ - visitor and listener mechanism lets you implement DOM visiting or SAX-analogous event processing of tree nodes
+
+#### Incremental parsing
+
+Incremental parsing is not supported in ANTLR4 library at this time.
+There is an [attempt by the community](https://github.com/dberlin/antlr4ts/tree/incremental) for ANTLR4 to support incremental parsing though.
+
 ### Additional notes
 
  - seems like a very mature library
+ - AST has to be constructed manually from Parse Tree via Listener
  - second fastest parser generator out there; run this online benchmark to see [Chevrotain performance](https://sap.github.io/chevrotain/performance/)
  - there is actually a [book](https://www.oreilly.com/library/view/the-definitive-antlr/9781941222621/) about antlr4
+ - ANTLR4 is producing parse trees instead of ASTs (more [here](https://github.com/antlr/antlr4/blob/master/doc/faq/parse-trees.md#what-if-i-need-asts-not-parse-trees-for-a-compiler-for-example))
+ - when using JavaScript runtime there is a constant warning: `Warning: Accessing non-existent property 'INVALID_ALT_NUMBER' of module exports inside circular dependency`
 
 ### References
 
@@ -47,3 +61,7 @@ console.dir(parse(jsonString, { buildParseTrees: true }).children[0].children[1]
  - https://www.npmjs.com/package/antlr4
  - https://github.com/antlr/antlr4
  - https://www.oreilly.com/library/view/the-definitive-antlr/9781941222621/
+ - https://github.com/svzdvd/antlr4-javascript-example
+ - http://homepage.divms.uiowa.edu/~slonnegr/plf/Book/
+ - https://medium.com/dailyjs/compiler-in-javascript-using-antlr-9ec53fd2780f
+ - https://saumitra.me/blog/antlr4-visitor-vs-listener-pattern/

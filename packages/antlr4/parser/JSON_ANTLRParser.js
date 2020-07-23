@@ -2,6 +2,7 @@
 // jshint ignore: start
 
 const antlr4 = require('antlr4');
+const Listener = require('./JSON_ANTLRListener');
 
 var grammarFileName = "JSON_ANTLR.g4";
 
@@ -122,6 +123,16 @@ JsonContext.prototype.array = function() {
     return this.getTypedRuleContext(ArrayContext,0);
 };
 
+JsonContext.prototype.enterRule = function(listener) {
+  if(listener instanceof Listener) {
+    listener.enterJson(this);
+  }
+};
+JsonContext.prototype.exitRule = function(listener) {
+  if(listener instanceof Listener) {
+    listener.exitJson(this);
+  }
+};
 
 
 
@@ -178,6 +189,18 @@ function ObjectContext(parser, parent, invokingState) {
 ObjectContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
 ObjectContext.prototype.constructor = ObjectContext;
 
+ObjectContext.prototype.enterRule = function(listener) {
+  if(listener instanceof Listener) {
+    listener.enterObject(this);
+  }
+};
+ObjectContext.prototype.exitRule = function(listener) {
+  if(listener instanceof Listener) {
+    listener.exitObject(this);
+  }
+};
+
+
 ObjectContext.prototype.pair = function(i) {
     if(i===undefined) {
         i = null;
@@ -188,8 +211,6 @@ ObjectContext.prototype.pair = function(i) {
         return this.getTypedRuleContext(PairContext,i);
     }
 };
-
-
 
 
 JSON_ANTLRParser.ObjectContext = ObjectContext;
@@ -265,6 +286,19 @@ function PairContext(parser, parent, invokingState) {
 PairContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
 PairContext.prototype.constructor = PairContext;
 
+PairContext.prototype.enterRule = function(listener) {
+  if(listener instanceof Listener) {
+    listener.enterPair(this);
+  }
+};
+
+PairContext.prototype.exitRule = function(listener) {
+  if(listener instanceof Listener) {
+    listener.exitPair(this);
+  }
+};
+
+
 PairContext.prototype.STRING = function() {
     return this.getToken(JSON_ANTLRParser.STRING, 0);
 };
@@ -319,6 +353,19 @@ function ArrayContext(parser, parent, invokingState) {
 
 ArrayContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
 ArrayContext.prototype.constructor = ArrayContext;
+
+ArrayContext.prototype.enterRule = function(listener) {
+  if(listener instanceof Listener) {
+    listener.enterArray(this);
+  }
+};
+
+ArrayContext.prototype.exitRule = function(listener) {
+  if(listener instanceof Listener) {
+    listener.exitArray(this);
+  }
+};
+
 
 ArrayContext.prototype.value = function(i) {
     if(i===undefined) {
@@ -406,6 +453,18 @@ function ValueContext(parser, parent, invokingState) {
 
 ValueContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
 ValueContext.prototype.constructor = ValueContext;
+
+ValueContext.prototype.enterRule = function(listener) {
+  if(listener instanceof Listener) {
+    listener.enterValue(this);
+  }
+};
+
+ValueContext.prototype.exitRule = function(listener) {
+  if(listener instanceof Listener) {
+    listener.exitValue(this);
+  }
+};
 
 ValueContext.prototype.STRING = function() {
     return this.getToken(JSON_ANTLRParser.STRING, 0);
