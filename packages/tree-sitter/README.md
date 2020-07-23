@@ -62,6 +62,19 @@ console.log(tree.rootNode.toString())
  - documentation is for C devs, JS devs needs to see the [binding](https://github.com/tree-sitter/node-tree-sitter/blob/master/index.js) and map the C functions into JS
  - documentation claims that GitHub.com is using it for highlighting code written in several languages
 
+#### Usage in GitHub
+
+GitHub is using the library to highlight following [languages](https://github.com/atom/atom/blob/4a9d56f52cab00a22744858d4077600d5365197a/package-lock.json#L7196-L7317).
+Tree-sitter is also used to power GitHub's more recent jump-to-definition and
+find-all-references features, as well as the "Jump To" menu that
+lets you jump to specific functions when viewing a file.
+
+#### Large JavaScript codebases using tree-sitter
+
+ - https://github.com/elm-tooling/elm-language-server
+ - https://github.com/bash-lsp/bash-language-server
+ - https://github.com/rubyide/vscode-ruby/tree/master/packages/language-server-ruby
+
 ### References
 
  - https://tree-sitter.github.io/tree-sitter/
