@@ -5,7 +5,7 @@ Tree-sitter is a parser generator tool and an incremental parsing library. It ca
 ### Source map support
 
 Full source map support consisting of `Location` object having `row` and `column` attributes.
-Location object is assigned on `startPosition` and `endPopition` attributes of every AST node.
+Location object is assigned on `startPosition` and `endPopition` attributes of every CST node.
 Along with that `startIndex` and `endIndex` are also available.
 
 ```js
@@ -28,7 +28,7 @@ console.log(tree.rootNode.endPosition);
 
 tree-sitter is robust enough to provide useful results even in the presence of syntax errors.
 When parser intercepts syntax error it generates appropriate `ERROR` AST node as part of AST tree.
-The rest of the input document is parsed and AST tree is created. The error recovery
+The rest of the input document is parsed and CST tree is created. The error recovery
 is smart enough to try multiple possible parsing path simultaneously and chooses the one that makes the most sense.
 
 
@@ -50,17 +50,17 @@ console.log(tree.rootNode.toString())
 ### Additional features
 
  - incremental parsing
- - dynamic AST updates with `edit` mode
- - contains API for AST nodes retrieval and traversal
+ - dynamic CST updates with `edit` mode
+ - contains API for CST nodes retrieval and traversal (via cursor mechanism)
 
 ### Additional notes
 
  - tree-sitter is implemented in C
  - [node.js](https://github.com/tree-sitter/node-tree-sitter) and [WASM](https://www.npmjs.com/package/web-tree-sitter) bindings exists
- - AST looks a little bit wild but should be manageable
- - if there are missing fragments in parsed JSON, `MISSING` AST nodes are generated as part of the AST tree
- - documentation is for C programmers
- - would require more time to fully understand
+ - uses Parse Trees (CST) instead of AST
+ - if there are missing fragments in parsed JSON, `MISSING` CST nodes are generated as part of the CST tree
+ - documentation is for C devs, JS devs needs to see the [binding](https://github.com/tree-sitter/node-tree-sitter/blob/master/index.js) and map the C functions into JS
+ - documentation claims that GitHub.com is using it for highlighting code written in several languages
 
 ### References
 
